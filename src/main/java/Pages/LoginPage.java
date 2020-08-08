@@ -11,7 +11,7 @@ public class LoginPage {
 		this.driver = ldriver;
 	}
 	
-	By XPath = By.xpath("//*[@id=\"UserName\"]");
+	By XPath = By.xpath("//input[@id=\"UserName\"]");
 	
 	public void username(String username) {
 		driver.findElement(XPath).sendKeys(username);
