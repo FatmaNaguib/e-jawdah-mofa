@@ -12,14 +12,30 @@ public class LoginPage {
 	}
 	
 	By XPath = By.xpath("//input[@id=\"UserName\"]");
+	By passxpath = By.xpath("//input[@id=\"Password\"]");
+	By loginxpath =  By.xpath("//button[@class =\'btn btn-primary btn-cons m-t-10\']");
+	By otpxpath = By.xpath("//h4[@class=\'panel-title\']");
 	
 	public void username(String username) {
 		driver.findElement(XPath).sendKeys(username);
 	}
 	
-	public String getusername() {
-		String text =  driver.findElement(XPath).getText();
-		return text;
+	public void password(String password) {
+		driver.findElement(passxpath).sendKeys(password);
+	}
+	
+	public void cliklogin() {
+		driver.findElement(loginxpath).click();
+		
+	}
+	
+	public String otptext() {
+		return driver.findElement(otpxpath).getText();
+		
+	} 
+	
+	public String getlogintext() {
+		 return driver.findElement(loginxpath).getText();
 	}
 
 }
