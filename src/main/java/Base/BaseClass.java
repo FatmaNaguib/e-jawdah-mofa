@@ -15,4 +15,8 @@ public class BaseClass {
 		driver.get(url);
 		return driver;
 	}
+	
+	public static void closedriver() {
+		driver.close();
+	}
 }

@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22562" started-at="2020-08-12T02:38:39 EET" finished-at="2020-08-12T02:39:02 EET">
+  <suite name="Default suite" duration-ms="26302" started-at="2020-08-15T03:27:13 EET" finished-at="2020-08-15T03:27:40 EET">
     <groups>
     </groups>
-    <test name="Test" duration-ms="22562" started-at="2020-08-12T02:38:39 EET" finished-at="2020-08-12T02:39:02 EET">
-      <class name="Test.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:Test.LoginPageTest@1786dec2]" name="setup" is-config="true" duration-ms="16144" started-at="2020-08-12T02:38:39 EET" finished-at="2020-08-12T02:38:55 EET">
+    <test name="Default test" duration-ms="26302" started-at="2020-08-15T03:27:13 EET" finished-at="2020-08-15T03:27:40 EET">
+      <class name="Test.UserLoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.UserLoginTest@74650e52]" name="setup" is-config="true" duration-ms="8425" started-at="2020-08-15T03:27:13 EET" finished-at="2020-08-15T03:27:22 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checktest()[pri:0, instance:Test.LoginPageTest@1786dec2]" name="checktest" duration-ms="6123" started-at="2020-08-12T02:38:55 EET" finished-at="2020-08-12T02:39:02 EET">
+        <test-method status="PASS" signature="userlogin()[pri:0, instance:Test.UserLoginTest@74650e52]" name="userlogin" duration-ms="2974" started-at="2020-08-15T03:27:22 EET" finished-at="2020-08-15T03:27:25 EET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checktest -->
-      </class> <!-- Test.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- userlogin -->
+        <test-method status="PASS" signature="clickContinuebtn()[pri:1, instance:Test.UserLoginTest@74650e52]" name="clickContinuebtn" duration-ms="12734" started-at="2020-08-15T03:27:25 EET" finished-at="2020-08-15T03:27:38 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContinuebtn -->
+        <test-method status="PASS" signature="selectvisa()[pri:2, instance:Test.UserLoginTest@74650e52]" name="selectvisa" duration-ms="1880" started-at="2020-08-15T03:27:38 EET" finished-at="2020-08-15T03:27:40 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectvisa -->
+        <test-method status="PASS" signature="closedriver()[pri:0, instance:Test.UserLoginTest@74650e52]" name="closedriver" is-config="true" duration-ms="189" started-at="2020-08-15T03:27:40 EET" finished-at="2020-08-15T03:27:40 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- Test.UserLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

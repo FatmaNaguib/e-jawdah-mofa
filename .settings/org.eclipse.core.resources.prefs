@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/test/java/Test/LoginPageTest.java=UTF-8
+encoding//src/test/java/Test/EmpLoginPageTest.java=UTF-8
+encoding//src/test/java/Test/IAMLoginTest.java=UTF-8
+encoding//src/test/java/Test/NewRegistarionTest.java=UTF-8
+encoding//src/test/java/Test/UserLoginTest.java=UTF-8

@@ -1,35 +1,28 @@
 package Test;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import Base.BaseClass;
-import Pages.LoginPage;
+import Pages.EmpLoginPage;
 
-public class LoginPageTest {
+public class EmpLoginPageTest {
 	
 	WebDriver driver;
-	LoginPage loginpage;
+	EmpLoginPage loginpage;
 	
 	@BeforeTest
 	public void setup() {
 		
-
 		 driver =  BaseClass.driversetup("http://40.114.199.223/main/login/ad");
-		 loginpage = new LoginPage(driver);
+		 loginpage = new EmpLoginPage(driver);
 	}
 	
-
 	 @Test
 	 public void checktest() {
 		
-		loginpage.username("admin");
-		loginpage.password("A123");
-		loginpage.cliklogin();
+		loginpage.emplogin("admin","A123");
 		String y = loginpage.otptext();
 		Assert.assertEquals(y, "التحقق");
 		 	 }
